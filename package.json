@@ -1,0 +1,14 @@
+{
+  "name": "contact-manager-app",
+  "version": "1.0.0",
+  "description": "To build a strong foundation and understand the base of backend development, started this project, including user auth, password hashing and JWT token concepts.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
