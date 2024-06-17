@@ -18,6 +18,12 @@ export const getContact = async (req, res) => {
 // creating a contact
 export const createContact = async (req, res) => {
   try {
+    const { name, email, phone } = req.body;
+    if (!name || !email || !phone) {
+      res.status(400);
+      throw new Error("All fields are mandatory!");
+      // abba yaha throw new error garne bittikai error handler middleware ma jancha
+    }
     res.status(201).json({ message: "Created contact succesfully!" });
   } catch {}
 };
